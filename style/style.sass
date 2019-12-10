@@ -1,0 +1,214 @@
+body 
+    font-family: 'Montserrat', sans-serif
+    margin: 0
+    padding: 0
+a
+    text-decoration: none
+h1
+    font-size: 40px
+    font-weight: 600
+    margin: 0
+.container 
+    height: 100vh
+.wrapper
+    width: 100%
+    max-width: 1000px
+    margin: auto
+.mob-hide
+    display: block
+.header
+    display: flex
+    justify-content: space-between
+    padding: 20px 0 70px 0
+    &__logo 
+        img
+            width: 146px
+            height: 34px
+    &__store
+        a
+            vertical-align: top
+            img
+                width: 123px
+                height: 35px
+                vertical-align: top
+.company
+    &-name__citymobil
+        color: #FF7200
+    &-back__citymobil
+        background-image: url(../img/city-mobil_back.png)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position-x: center
+        background-position-y: center
+        height: calc(100vh - 563px)
+.footer
+    padding: 36px 0 46px 0
+    background-color: #EAEAEA
+    text-align: center
+    &__form
+        background-color: #ffffff
+        border-radius: 15px
+        width: 638px
+        margin: auto
+        text-align: center
+        padding: 38px 0
+        &-title
+            font-size: 23px
+            font-weight: 600
+            padding-bottom: 27px
+        &-elements
+            &__input
+                width: 225px
+                height: 50px
+                background-color: #F0F0F0
+                border-radius: 10px
+                border: none
+                padding: 0 25px
+                font-size: 20px
+                margin-right: 24px
+            &__button
+                background-color: #FF7200
+                border-radius: 10px
+                width: 205px
+                height: 50px
+                border: none
+                font-size: 20px
+                color: #fff
+                font-family: 'Roboto', sans-serif
+                font-weight: 300
+    &__store
+        margin-top: 26px
+        a
+            vertical-align: top
+            &:first-child
+                img
+                    margin-right: 29px
+            img
+                width: 162px
+                height: 49px
+                vertical-align: top
+@media only screen and (max-height : 1000px)
+    h1
+        font-size: 40px
+    .header
+        padding: 17px 0 40px 0
+    .company
+        &-back__citymobil
+            background-image: url(../img/city-mobil_back_1000.png)
+            height: calc(100vh - 457px)
+            background-size: contain
+    .footer
+        padding: 30px 0 20px 0
+        &__form
+            padding: 25px 0
+        &__store
+            margin-top: 13px
+            a
+                img
+                    width: 156px
+                    height: 45px
+@media only screen and (max-height : 900px)
+    .header
+        padding: 17px 0 40px 0
+    .company
+        &-back__citymobil
+            background-image: url(../img/city-mobil_back_800.png)
+            height: calc(100vh - 423px)
+            background-size: contain
+    .footer
+        padding: 20px 0 15px 0
+        &__form
+            padding: 20px 0
+        &__store
+            margin-top: 10px
+            a
+                img
+                    width: 129px
+                    height: 39px
+@media only screen and (max-height : 830px)
+    .company
+        &-back__citymobil
+            background-size: contain
+@media only screen and (max-width : 768px)
+    .container 
+        height: 100%
+    .mob-hide
+        display: none
+    .wrapper
+        padding: 0 30px
+        width: unset
+        max-width: inherit
+    h1
+        font-size: 36px
+    .header
+        display: block
+        text-align: center
+        &__logo 
+            img
+                width: 276px
+                height: 34px
+    .company
+        &-back__citymobil
+            background-image: url(../img/city-mobil_back_mob.png)
+            height: 328px
+            background-size: cover
+    .footer
+        &__form
+            width: 100%
+            &-title
+                font-size: 23px
+            &-elements
+                display: flex
+                justify-content: space-between
+                padding: 0 20px
+                &__input
+                    width: 100%
+                &__button
+                    width: 100%
+        &__store
+            margin: 25px 0
+@media only screen and (max-width : 520px)
+    .container 
+        height: 100%
+    .mob-hide
+        display: none
+    .wrapper
+        padding: 0 16px
+        width: unset
+        max-width: inherit
+    h1
+        font-size: 20px
+    .header
+        display: block
+        text-align: center
+        &__logo 
+            img
+                width: 276px
+                height: 34px
+    .company
+        &-back__citymobil
+            background-image: url(../img/city-mobil_back_mob_300.png)
+            height: 328px
+            background-size: contain
+    .footer
+        &__form
+            width: 100%
+            &-title
+                font-size: 16px
+            &-elements
+                display: flex
+                flex-direction: column
+                padding: 0 25px
+                &__input
+                    width: calc(100% - 50px)
+                    margin-bottom: 13px
+                    font-size: 16px
+                &__button
+                    width: 100%
+                    font-size: 16px
+        &__store
+            margin: 25px 0
+            a
+                img
+                    width: 106px
+                    height: 31px
